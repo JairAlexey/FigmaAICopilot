@@ -6,63 +6,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivian AI Copilot</title>
     <link rel="stylesheet" href="./Estilos/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="header__logo">vivian</div>
-        <button class="header__button">Join Waitlist</button>
+        <img src="./Images/header_logo.svg" alt="Logo_header" class="header__logo">
+        <button class="header__button">
+            <p>Join Waitlist</p>
+        </button>
     </header>
 
     <section class="hero">
         <div class="hero__content">
             <h2 class="hero__subtitle">Introducing</h2>
-            <h1 class="hero__title">AI Copilot</h1>
+            <img src="./Images/hero_logo.svg" alt="AI_Copilot" class="hero__logo">
             <p class="hero__description">
                 Let your recruiters be responsive 24/7<br>without having to work 24/7.
             </p>
             <form class="hero__form">
-                <input type="email" class="hero__input" placeholder="name@companyemail.com" required>
-                <button type="submit" class="hero__submit-button">Join Waitlist</button>
+                <input type="email" class="cta__input" placeholder="name@companyemail.com" required>
+                <button type="submit" class="cta__button">
+                    Join Waitlist
+                </button>
             </form>
         </div>
     </section>
 
     <section class="features">
         <h2 class="features__title">Supercharge Your <br> Recruiter Productivity</h2>
-        
+
+        <img src="./Images/supercharge.svg" alt="Descripción de la imagen" class="feature__image">
+
         <div class="features__grid">
             <div class="feature-card">
                 <div class="feature-card__icon">
-                    <img src="path/to/clock-icon.svg" alt="24/7 Icon">
+                    <img src="./Icons/reloj.svg" alt="24/7 Icon">
                 </div>
                 <h3 class="feature-card__title">24/7 Responsiveness</h3>
                 <p class="feature-card__description">
                     AI Copilot is there to reply to candidates even when the recruiter can't be.
                 </p>
+                <img src="./Images/responsiveness.svg" alt="Imagen_Card" class="feature-card__image">
             </div>
 
             <div class="feature-card">
                 <div class="feature-card__icon">
-                    <img src="path/to/tasks-icon.svg" alt="Tasks Icon">
+                    <img src="./Icons/tasks.svg" alt="Tasks Icon">
                 </div>
                 <h3 class="feature-card__title">Expedite Basic Tasks</h3>
                 <p class="feature-card__description">
                     AI Copilot automatically reduces low value tasks that take up your recruiter's day.
                 </p>
+                <img src="./Images/tasks.svg" alt="Imagen_Card" class="feature-card__image">
+
             </div>
 
             <div class="feature-card">
                 <div class="feature-card__icon">
-                    <img src="path/to/calendar-icon.svg" alt="Calendar Icon">
+                    <img src="./Icons/calendario.svg" alt="Calendar Icon">
                 </div>
                 <h3 class="feature-card__title">Automated Scheduling</h3>
                 <p class="feature-card__description">
                     AI Copilot can schedule interviews with candidates while recruiters are offline.
                 </p>
+                <img src="./Images/automated.svg" alt="Imagen_Card" class="feature-card__image">
+
             </div>
         </div>
     </section>
+
+    <section class="action">
+        <div class="action__content">
+            <h1 class="action__title">
+                AI Copilot
+                <span class="action__subtitle">in Action</span>
+            </h1>
+            <button class="action__button">Join Waitlist</button>
+        </div>
+        <div class="action__image">
+            <img src="./Images/phone.svg" alt="Phone Image">
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2 class="faq__title">Frequently asked questions</h2>
+        
+        <div class="faq__accordion">
+            <div class="faq__item">
+                <button class="faq__button">
+                    What is Vivian AI Copilot?
+                    <span class="faq__icon">
+                        <img src="./Icons/plus.svg" alt="Expandir">
+                    </span>
+                </button>
+                <div class="faq__content">
+                    <p>Vivian AI Copilot is a virtual companion for recruiters powered by artificial intelligence. It enables recruiters to delegate everything they hate to do—but must do—so they can focus on the real reasons they became a recruiter: building connections and helping clinicians find a job in which they can flourish. Copilot can respond to most candidate questions and follow up on outstanding or outdated documents.</p>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__button">
+                    When can I try Vivian AI Copilot?
+                    <span class="faq__icon">
+                        <img src="./Icons/plus.svg" alt="Expandir">
+                    </span>
+                </button>
+                <div class="faq__content">
+                    <p>Join our waitlist to be notified when early access becomes available.</p>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__button">
+                    Do I have to be a Vivian customer to join the AI Copilot early access program?
+                    <span class="faq__icon">
+                        <img src="./Icons/plus.svg" alt="Expandir">
+                    </span>
+                </button>
+                <div class="faq__content">
+                    <p>Yes, Vivian AI Copilot is exclusively available to Vivian customers.</p>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__button">
+                    Is it free to get early access to Vivian AI Copilot?
+                    <span class="faq__icon">
+                        <img src="./Icons/plus.svg" alt="Expandir">
+                    </span>
+                </button>
+                <div class="faq__content">
+                    <p>Early access program details, including pricing, will be shared when you're invited to participate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta__content">
+            <h2 class="cta__title">Join our early access waitlist</h2>
+            <form class="cta__form">
+                <input type="email" class="cta__input" placeholder="name@companyemail.com" required>
+                <button type="submit" class="cta__button">Join Waitlist</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__left">
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <i class="fa fa-facebook" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <i class="fa fa-instagram" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <i class="fa fa-twitter" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <i class="fa fa-linkedin" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__center">
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy policy</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#" class="footer__link">Terms of service</a>
+                </div>
+                <p class="footer__copyright">All rights reserved. Vivian 2023.</p>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__stores">
+                    <a href="#" class="footer__store-link">
+                        <img src="./Icons/appStore.svg" alt="App Store" class="footer__store-icon">
+                    </a>
+                    <a href="#" class="footer__store-link">
+                        <img src="./Icons/googlePlay.svg" alt="Google Play" class="footer__store-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
