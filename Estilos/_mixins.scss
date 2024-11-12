@@ -1,0 +1,9 @@
+// Mixins
+@mixin text-style($font-size, $height) {
+    font-family: 'Inter', sans-serif;
+    font-size: $font-size;
+    line-height: 40px;
+    font-weight: Regular;
+    letter-spacing: 0%;
+    height: $height;
+}

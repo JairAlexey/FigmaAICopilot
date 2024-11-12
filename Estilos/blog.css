@@ -414,7 +414,6 @@
   height: auto;
   display: block;
   border-bottom-left-radius: 12px;
-  /* Ajusta los bordes si es necesario */
   border-bottom-right-radius: 12px;
 }
 
@@ -597,7 +596,7 @@
   padding: 4rem 2rem;
   background-color: #000;
   color: #ffffff;
-  height: 843px;
+  height: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,6 +634,10 @@
 .faq__accordion {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.faq__checkbox {
+  display: none;
 }
 
 .faq__item {
@@ -713,6 +716,10 @@
   height: 24px;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -731,13 +738,39 @@
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
-  padding: 0 2rem;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14.63px;
+  line-height: 40px;
+  font-weight: Regular;
+  letter-spacing: 0%;
+  height: 96px;
 }
 
 .faq__content p {
-  padding-bottom: 2rem;
+  padding: 2rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.faq__checkbox:checked + .faq__button {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.faq__checkbox:checked + .faq__button .faq__icon img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.faq__checkbox:checked ~ .faq__content {
+  max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    height: auto;
+    padding: 2rem 1rem;
+  }
 }
 
 .cta {
